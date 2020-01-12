@@ -7,7 +7,7 @@ require_once( 'Electronic/ConsoleClass.php' );
 class ElectronicItems {
 
 	private $items = array();
-	public $total;
+	public $filteredItems = array();
 	/**
 	 * Constructor.
 	 *
@@ -113,10 +113,10 @@ $item->setItem( 'console', 130.25 );
 var_dump( $item->getAllItems() );
 
 // Get Total Price
-echo $item->getTotalPrice();
+//echo $item->getTotalPrice();
 
 // Get Filtered Item by Type
-$item->filterItemByType( 'television' );
+//$item->filterItemByType( 'television' );
 
 // Get Sorted Item by Price
 var_dump( $item->getSortedItems() );
